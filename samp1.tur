@@ -1,0 +1,17 @@
+var a, b : int;
+var Z : record aa: real; bb : boolean end record;
+
+assert a = b;
+if Z.aa > a-b then
+	var abc : int;
+	abc := 0;
+	loop
+		abc := (a+b) * abc;
+		exit when abc > 1000;
+		abc := abc / 2 -Z.aa;
+	end loop;
+elsif b <= 2*a then
+	Z.bb := b-3 < a * 34;
+else
+	a := b; b := Z.aa / a;
+end if;
